@@ -183,10 +183,90 @@
 // }
 
 // While
-let index = 1
-while (index <= 5) {
+// let index = 1
+// while (index <= 5) {
     
-    console.log(`Looping Index = ${index}`);
-    index++;
+//     console.log(`Looping Index = ${index}`);
+//     index++;
+
+// }
+
+// Looping through an array
+// For Loop
+// for (let index = 0; index < todos.length; index++) {
+    
+//     const element = todos[index];
+//     console.log(element.taskName);
+    
+// }
+
+// For-of Loop
+// for (const iterator of todos) {
+    
+//     console.log(iterator);
+//     To access separate properties
+//     console.log(iterator.taskName);
+
+// }
+
+// High Order Array Methods - [forEach, Map, filter]
+
+// Using forEach
+// todos.forEach(function name(key) {
+
+//     console.log(key.taskName);
+    
+// });
+
+// Using Map (The Map method has a return type of an array )
+// const result = todos.map(function name(key) {
+    
+//     return key.taskName
+
+// });
+// console.log(result);
+
+// Using filter (The filter method returns the objects or elements of the array only if the condition given is satisfied)
+// const result = todos.filter(function name(key) {
+
+//     return key.isCompleted === true;
+    
+// });
+// console.log(result);
+// can integrate the map method to access the properties of the object which satisfies the given condition
+// const result = todos.filter(function name(key) {
+
+//     return key.isCompleted === true;
+    
+// }).map(function name(key) {
+
+//     return key.taskName;
+    
+// })
+// console.log(result);
+
+// Statements - (if, else, else if Ladder )
+const x = 5;
+const y = 10;
+
+if(x>5 && y<=10){
+
+    console.log(`${x} is greater than 5 and ${y} is less than 10`);
+
+}else if(x<=5 && y>10){
+
+    console.log(`${x} is less than or equal to 5 and ${y} is greater than 10`);
+
+}else if(x>5 && y>10){
+
+    console.log(`${x} is greater than 5 and ${y} is greater than 10`);
+
+}else if(x<5 && y<10){
+
+    console.log(`${x} is less than 5 and ${y} is less than 10`);
+
+}else{
+
+    console.log(`Undetermined`);
 
 }
