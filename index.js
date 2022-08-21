@@ -246,27 +246,70 @@
 // console.log(result);
 
 // Statements - (if, else, else if Ladder )
-const x = 5;
-const y = 10;
+// const x = 6;
+// const y = 12;
+// if(x>5 && y<=10){
 
-if(x>5 && y<=10){
+//     console.log(`${x} is greater than 5 and ${y} is less than 10`);
 
-    console.log(`${x} is greater than 5 and ${y} is less than 10`);
+// }else if(x<=5 && y>10){
 
-}else if(x<=5 && y>10){
+//     console.log(`${x} is less than or equal to 5 and ${y} is greater than 10`);
 
-    console.log(`${x} is less than or equal to 5 and ${y} is greater than 10`);
+// }else if(x>5 && y>10){
 
-}else if(x>5 && y>10){
+//     console.log(`${x} is greater than 5 and ${y} is greater than 10`);
 
-    console.log(`${x} is greater than 5 and ${y} is greater than 10`);
+// }else if(x<5 && y<10){
 
-}else if(x<5 && y<10){
+//     console.log(`${x} is less than 5 and ${y} is less than 10`);
 
-    console.log(`${x} is less than 5 and ${y} is less than 10`);
+// }else{
 
-}else{
+//     console.log(`Undetermined`);
 
-    console.log(`Undetermined`);
+// }
 
-}
+// Ternary Operator
+// const x = 10;
+// const colour = x>10 ? 'Red' : 'Green';
+// console.log(colour);
+
+// Switch case
+// switch (colour) {
+//     case 'Red': 
+
+//         console.log('Limit Exceeded');
+        
+//         break;
+//     case 'Green':
+
+//         console.log('Under Limit');
+
+//         break;
+//     default:
+
+//         console.log('Reached the maximum limit');
+
+//         break;
+// }
+
+// Functions
+
+// function addition(num1 =5, num2 = 6) {
+
+//     // console.log(num1+num2);
+//     return num1+num2;
+
+// }
+
+// const result = addition();
+// console.log(result);
+
+// Arrow functions - was introduced in 2016 ES6
+// const multiply = (num1, num2) => {
+
+//     return num1*num2;
+    
+// }
+// console.log(multiply(5,4));
