@@ -313,3 +313,73 @@
     
 // }
 // console.log(multiply(5,4));
+
+// another way of implementing Arrow functions
+// const multiply = (num1, num2) => console.log(num1*num2);
+
+// another way of implementing Arrow functions
+// const multiply = (num1, num2) => num1*num2;
+// console.log(multiply(5,4)); 
+
+// OOPS
+
+// Creating an Object
+
+// Creating a Constructor 
+// function Person(firstName, middleName, age, dob) {
+
+//     this.firstName = firstName;
+//     this.middleName = middleName;
+//     this.age = age;
+//     this.dob = new Date(dob); //Date - MM-DD-YYYY
+    
+// }
+// Person.prototype.getBirthYear = function name(params) {
+    
+//     return this.dob.getFullYear();
+
+// }
+
+// Person.prototype.getFullName = function name(params) {
+    
+//     return `${this.firstName} ${this.middleName}`;
+
+// }
+
+// // Instatiate Objects
+// const person1 = new Person ('Sundar', 'Raj', '24', '03-29-1998');
+// const person2 = new Person ('Siva', 'Kumar', '24', '03-29-1998');
+
+// console.log(person1);
+// console.log(person1.getBirthYear(), person1.getFullName());
+// console.log(person2.firstName, person2.middleName, person2.dob.getFullYear());
+// console.log(person1);
+
+// creating a Class
+class Person {
+
+    constructor (firstName, middleName, age, dob){
+
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.age = age;
+        this.dob = new Date(dob);
+
+    }
+    getFullName(){
+
+        return `${this.firstName} ${this.middleName}`;
+
+    }
+    getBirthYear() {
+        
+        return this.dob.getFullYear();
+
+    }
+
+}
+
+const person1 = new Person ('Sundar', 'Raj', 24, '03-29-1998');
+
+console.log(person1);
+console.log(person1.getFullName(), person1.getBirthYear());
