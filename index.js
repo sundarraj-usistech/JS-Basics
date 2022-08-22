@@ -346,7 +346,7 @@
 
 // }
 
-// // Instatiate Objects
+// // Instantiate Objects
 // const person1 = new Person ('Sundar', 'Raj', '24', '03-29-1998');
 // const person2 = new Person ('Siva', 'Kumar', '24', '03-29-1998');
 
@@ -356,30 +356,52 @@
 // console.log(person1);
 
 // creating a Class
-class Person {
+// class Person {
 
-    constructor (firstName, middleName, age, dob){
+//     constructor (firstName, middleName, age, dob){
 
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.age = age;
-        this.dob = new Date(dob);
+//         this.firstName = firstName;
+//         this.middleName = middleName;
+//         this.age = age;
+//         this.dob = new Date(dob);
 
-    }
-    getFullName(){
+//     }
+//     getFullName(){
 
-        return `${this.firstName} ${this.middleName}`;
+//         return `${this.firstName} ${this.middleName}`;
 
-    }
-    getBirthYear() {
+//     }
+//     getBirthYear() {
         
-        return this.dob.getFullYear();
+//         return this.dob.getFullYear();
 
-    }
+//     }
 
-}
+// }
 
-const person1 = new Person ('Sundar', 'Raj', 24, '03-29-1998');
+// const person1 = new Person ('Sundar', 'Raj', 24, '03-29-1998');
 
-console.log(person1);
-console.log(person1.getFullName(), person1.getBirthYear());
+// console.log(person1);
+// console.log(person1.getFullName(), person1.getBirthYear());
+
+// console.log(window);
+// window.alert(1);
+
+// Selecting DOM - Single Element, Multiple Element
+
+// Single Element
+// console.log(document.getElementById('my-form'));
+// or can assign to a variable and can log
+// const form = document.getElementById("my-form");
+// console.log(form);
+// console.log(document.querySelector('h3')); //Selects the first occurrence of the h1 in the given document
+
+// Multiple Elements
+// console.log(document.querySelectorAll('.item'));
+// console.log(document.getElementsByClassName('item'));
+// console.log(document.getElementsByTagName('li'));
+
+// [ in case of query selector we can pass anything class, id and name like anything unlike others ]
+
+const items = document.querySelectorAll('.items');
+items.forEach((item) => console.log(item));    
