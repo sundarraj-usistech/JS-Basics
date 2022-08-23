@@ -403,5 +403,45 @@
 
 // [ in case of query selector we can pass anything class, id and name like anything unlike others ]
 
-const items = document.querySelectorAll('.items');
-items.forEach((item) => console.log(item));    
+// Query Selector Using forEach
+// const item = document.querySelectorAll('.item');
+// item.forEach((item) => console.log(item)); 
+
+// Manipulating the DOM elements
+
+// removing the elements
+// const ul = document.querySelector('.items');
+// ul.remove();
+// ul.lastElementChild.remove(); //removing the last child element
+
+// Editing the content of the Element
+// ul.firstElementChild.textContent ='Hello';
+// ul.children[1].innerText = 'Hi';
+// ul.lastElementChild.innerHTML = '<h4>Hello World</h4>';
+
+// Editing the Style of the Elements
+// const btn = document.querySelector('.btn');
+// btn.style.background = 'green';
+
+// adding Event Listener
+// btn.addEventListener('click', (eventParameter) => {
+
+//     eventParameter.preventDefault();// Prevents the value from disappearing
+    
+// Different attributes of event click
+//     console.log('Form Submitted');
+//     console.log(eventParameter);
+//     console.log(eventParameter.target);
+//     console.log(eventParameter.target.className);
+
+// document.querySelector('#my-form')
+// .style.background = '#ccc';
+// document.querySelector('body').classList.add('bg-dark');//Adding a class while clicking
+// document.querySelector('.items')
+// .lastElementChild.innerHTML = '<h3>Hello<h3>';
+
+// });
+
+// Some Event Listener examples
+// mouseover - hovering
+// mouseout - fires when hover and exit 
