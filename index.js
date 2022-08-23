@@ -445,3 +445,40 @@
 // Some Event Listener examples
 // mouseover - hovering
 // mouseout - fires when hover and exit 
+
+// Capturing values in the input field
+const myForm = document.querySelector('#my-form');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(eventParameter) {
+
+    eventParameter.preventDefault();
+
+    if (name.value === '' || email.value === '') {
+
+        // alert('Please fill out all the fields');
+        msg.classList.add('error');
+        msg.innerHTML = 'Please fill out all the fields';
+        setTimeout(() => msg.remove(), 2000);
+
+    }
+    else{
+
+        // console.log('success');
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${name.value}:${email.value}`));
+        
+        userList.appendChild(li);
+        
+        // Clear Inputs
+        name.value = '';
+        email.value = '';
+
+    }
+    
+}
